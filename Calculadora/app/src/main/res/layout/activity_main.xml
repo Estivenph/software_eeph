@@ -21,19 +21,17 @@
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="15"
+            android:id="@+id/valor_1"
+            android:layout_width="183dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
             android:ems="10"
-            android:foregroundGravity="center"
             android:gravity="center"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:inputType="number"
+            android:text="valor1" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/operacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal|center_vertical"
@@ -45,16 +43,14 @@
             android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="15"
+            android:id="@+id/valor_2"
+            android:layout_width="189dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
             android:ems="10"
-            android:foregroundGravity="center"
             android:gravity="center"
-            android:inputType="textPersonName"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:inputType="number"
+            android:text="valor2" />
 
     </LinearLayout>
 
@@ -72,7 +68,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonsumar"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:insetLeft="10dp"
@@ -81,7 +77,7 @@
                 android:text="SUMA" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonrestar"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:insetLeft="10dp"
@@ -95,7 +91,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttondividir"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:insetLeft="10dp"
@@ -104,7 +100,7 @@
                 android:text="DIVISION" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/buttonmultiplicar"
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:insetLeft="10dp"
@@ -133,12 +129,14 @@
         app:layout_constraintTop_toBottomOf="@+id/tableLayout">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/resultado"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginLeft="250dp"
             android:background="#EFDEDE"
-            android:text="TextView"
-            android:textColorHint="#DDD5D5" />
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#050505"
+            android:textColorHint="#000000" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
