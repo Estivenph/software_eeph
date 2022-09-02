@@ -27,8 +27,9 @@
             android:layout_gravity="center"
             android:ems="10"
             android:gravity="center"
+            android:hint="@string/valor_1"
             android:inputType="number"
-            android:text="valor1" />
+            android:autofillHints="" />
 
         <TextView
             android:id="@+id/operacion"
@@ -38,7 +39,7 @@
             android:layout_marginTop="20dp"
             android:foregroundGravity="top"
             android:gravity="center_horizontal"
-            android:text="OPERAR"
+            android:text="@string/operar"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -49,8 +50,9 @@
             android:layout_gravity="center|center_horizontal|center_vertical"
             android:ems="10"
             android:gravity="center"
+            android:hint="@string/valor_2"
             android:inputType="number"
-            android:text="valor2" />
+            android:autofillHints="" />
 
     </LinearLayout>
 
@@ -74,6 +76,7 @@
                 android:insetLeft="10dp"
                 android:insetTop="10dp"
                 android:insetRight="10dp"
+                android:onClick="sumar"
                 android:text="SUMA" />
 
             <Button
@@ -83,6 +86,7 @@
                 android:insetLeft="10dp"
                 android:insetTop="10dp"
                 android:insetRight="10dp"
+                android:onClick="restar"
                 android:text="RESTA" />
         </TableRow>
 
@@ -97,6 +101,7 @@
                 android:insetLeft="10dp"
                 android:insetTop="10dp"
                 android:insetRight="10dp"
+                android:onClick="dividir"
                 android:text="DIVISION" />
 
             <Button
@@ -106,6 +111,7 @@
                 android:insetLeft="10dp"
                 android:insetTop="10dp"
                 android:insetRight="10dp"
+                android:onClick="multiplicar"
                 android:text="MULTIPLICA" />
         </TableRow>
 
@@ -132,7 +138,7 @@
             android:id="@+id/resultado"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginLeft="250dp"
+            android:layout_marginStart="250dp"
             android:background="#EFDEDE"
             android:gravity="center"
             android:text="0"
