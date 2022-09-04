@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         int num1=0;
         int num2=1;
 
-        for (int i = 1; i <= valor; i++)
+        for (int i = 0; i < valor; i++)
         {
             fibonicci= num1 + num2;
             num1 = num2;
